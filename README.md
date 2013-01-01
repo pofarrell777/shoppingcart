@@ -14,7 +14,9 @@ DELETE http://hostname/users/<id>/shoppingcarts/<id>
 
 For POST and PUT request, application/json is accepted as content type.
 A typical request body would look like this:
-    {"id":1,"shoppingCarts":[{"id":0,"items":["New record","CD","Poster"]},{"id":1,"items":["Hard drive"]}]}
+```javascript
+{"id":1,"shoppingCarts":[{"id":0,"items":["New record","CD","Poster"]},{"id":1,"items":["Hard drive"]}]}
+```
 The Jackson JSON parser is used by Spring to convert to and from JSON.
 
 Possible errors are shown in the returned HTTP status code, and can be either 404 not found
