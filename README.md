@@ -3,13 +3,13 @@ Shoppingcart
 I've tried to keep the code base as small as possible while implementing the requirements.
 The main logic is in the Spring MVC ShoppingCartController, which when initialized can respond to HTTP requests based on this pattern:
 * GET http://hostname/users
-* GET http://hostname/users/<id>
-* DELETE http://hostname/users/<id>
-* GET http://hostname/users/<id>/shoppingcarts
-* GET http://hostname/users/<id>/shoppingcarts/<id>
-* POST http://hostname/users/<id>/shoppingcarts/<id>
-* PUT http://hostname/users/<id>/shoppingcarts/<id>
-* DELETE http://hostname/users/<id>/shoppingcarts/<id>
+* GET http://hostname/users/(id)
+* DELETE http://hostname/users/(id)
+* GET http://hostname/users/(id)/shoppingcarts
+* GET http://hostname/users/(id)/shoppingcarts/(id)
+* POST http://hostname/users/(id)/shoppingcarts/(id)
+* PUT http://hostname/users/(id)/shoppingcarts/(id)
+* DELETE http://hostname/users/(id)/shoppingcarts/(id)
 
 For POST and PUT request, application/json is accepted as content type.
 A typical request body would look like this:
